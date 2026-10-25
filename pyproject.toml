@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zero-config-claim-audit"
+version = "0.1.0"
+description = "Offline audit of documented config requirements against Python source"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "zero-config-claim-audit contributors"}]
+dependencies = []
+
+[project.scripts]
+zero-config-claim-audit = "zero_config_claim_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
