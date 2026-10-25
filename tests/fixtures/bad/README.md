@@ -1,0 +1,1 @@
+Zero-config. No setup.
